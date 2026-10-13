@@ -1,0 +1,25 @@
+from datetime import datetime
+
+print("=" * 45)
+print("       REAL-TIME WEATHER DASHBOARD")
+print("=" * 45)
+
+city = input("Enter city name: ").strip()
+
+if not city:
+    city = "Nagpur"
+
+print("\nFetching dashboard information...")
+print("-" * 45)
+print("City             :", city)
+print("Date             :", datetime.now().strftime("%d-%m-%Y"))
+print("Time             :", datetime.now().strftime("%I:%M %p"))
+print("-" * 45)
+print("Weather Dashboard Demo")
+print("Temperature      : Demo data")
+print("Humidity         : Demo data")
+print("Rainfall         : Demo data")
+print("Wind Speed       : Demo data")
+print("-" * 45)
+print("Status: Dashboard demo executed successfully!")
+print("=" * 45)
